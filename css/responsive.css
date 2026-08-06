@@ -1,0 +1,741 @@
+/*
+ * GlobalTrade - Premium Import/Export Website
+ * Responsive Styles
+ * Author: Senior UI/UX Designer
+ */
+
+/* ============================================
+   LARGE DEVICES (Desktops, less than 1400px)
+============================================ */
+
+@media (max-width: 1399px) {
+    :root {
+        --section-padding: 80px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .floating-card {
+        padding: var(--space-5);
+    }
+}
+
+/* ============================================
+   MEDIUM DEVICES (Tablets, less than 1200px)
+============================================ */
+
+@media (max-width: 1199px) {
+    :root {
+        --section-padding: 70px;
+        --navbar-height: 70px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-lg);
+    }
+    
+    .floating-card {
+        display: none;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        margin-top: var(--space-8);
+    }
+    
+    .showcase-item {
+        flex: 0 0 calc(50% - var(--space-3));
+    }
+}
+
+/* ============================================
+   SMALL DEVICES (Landscape Tablets, less than 992px)
+============================================ */
+
+@media (max-width: 991px) {
+    :root {
+        --section-padding: 60px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-collapse {
+        background: var(--color-white);
+        padding: var(--space-6);
+        margin-top: var(--space-4);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-xl);
+    }
+    
+    .nav-link {
+        padding: var(--space-3) 0;
+    }
+    
+    .nav-link::after {
+        left: 0;
+        transform: none;
+    }
+    
+    .statistics-container {
+        padding: var(--space-8);
+    }
+    
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-2xl);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .ceo-card {
+        padding: var(--space-8);
+    }
+    
+    .contact-form-wrapper {
+        padding: var(--space-8);
+        margin-top: var(--space-6);
+    }
+    
+    .footer-bottom-links {
+        justify-content: flex-start;
+        margin-top: var(--space-4);
+    }
+    
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+}
+
+/* ============================================
+   EXTRA SMALL DEVICES (Portrait Tablets, less than 768px)
+============================================ */
+
+@media (max-width: 767px) {
+    :root {
+        --section-padding: 50px;
+        --font-size-5xl: 2.5rem;
+        --font-size-4xl: 2rem;
+        --font-size-3xl: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+    }
+    
+    .search-container {
+        padding: var(--space-6);
+    }
+    
+    .search-input {
+        font-size: var(--font-size-base);
+        padding: var(--space-3) var(--space-4) var(--space-3) calc(var(--space-4) + var(--space-8));
+    }
+    
+    .search-icon {
+        left: var(--space-4);
+        font-size: var(--font-size-lg);
+    }
+    
+    .popular-searches {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .category-card {
+        padding: var(--space-6);
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-2xl);
+    }
+    
+    .product-filters {
+        gap: var(--space-2);
+    }
+    
+    .filter-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+    
+    .about-image-floating {
+        width: 150px;
+        height: 150px;
+        top: -20px;
+        left: -20px;
+    }
+    
+    .about-feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-primary-custom,
+    .btn-outline-primary-custom,
+    .btn-outline-light-custom {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .ceo-card {
+        padding: var(--space-6);
+    }
+    
+    .ceo-quote {
+        font-size: var(--font-size-lg);
+    }
+    
+    .service-card {
+        padding: var(--space-6);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-2xl);
+    }
+    
+    .feature-card {
+        padding: var(--space-6);
+    }
+    
+    .showcase-item {
+        flex: 0 0 100%;
+    }
+    
+    .showcase-control {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+    
+    .testimonial-card {
+        padding: var(--space-6);
+    }
+    
+    .testimonial-text {
+        font-size: var(--font-size-base);
+    }
+    
+    .accordion-number {
+        width: 35px;
+        height: 35px;
+        font-size: var(--font-size-sm);
+    }
+    
+    .custom-accordion .accordion-button {
+        padding: var(--space-5);
+        font-size: var(--font-size-base);
+    }
+    
+    .custom-accordion .accordion-body {
+        padding-left: calc(var(--space-5) + 35px + var(--space-3));
+    }
+    
+    .newsletter-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .newsletter-description {
+        font-size: var(--font-size-base);
+    }
+    
+    .newsletter-input-wrapper {
+        flex-direction: column;
+    }
+    
+    .newsletter-input {
+        padding: var(--space-3) var(--space-5);
+    }
+    
+    .newsletter-input-icon {
+        left: var(--space-4);
+    }
+    
+    .newsletter-features {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .contact-info-item {
+        padding: var(--space-5);
+    }
+    
+    .contact-form-wrapper {
+        padding: var(--space-6);
+    }
+    
+    .contact-social-links {
+        justify-content: flex-start;
+    }
+    
+    .footer {
+        padding-top: var(--space-16);
+    }
+    
+    .footer-top,
+    .footer-middle {
+        padding-bottom: var(--space-8);
+    }
+    
+    .footer-widget {
+        margin-bottom: var(--space-8);
+    }
+    
+    .footer-feature {
+        margin-bottom: var(--space-6);
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: var(--space-6);
+        right: var(--space-6);
+    }
+    
+    .step-indicator {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+    
+    .step-item::before {
+        display: none;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .timeline-icon {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* ============================================
+   MOBILE DEVICES (Phones, less than 576px)
+============================================ */
+
+@media (max-width: 575px) {
+    :root {
+        --section-padding: 40px;
+        --space-8: 1.5rem;
+        --space-10: 2rem;
+        --space-12: 2.5rem;
+    }
+    
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    h3 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-xs);
+    }
+    
+    .hero-section {
+        min-height: 100vh;
+        padding-top: calc(var(--navbar-height) + var(--space-4));
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--space-5);
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-6);
+    }
+    
+    .hero-badge {
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--space-5);
+    }
+    
+    .hero-buttons .btn {
+        padding: var(--space-3) var(--space-5);
+        font-size: var(--font-size-sm);
+    }
+    
+    .scroll-indicator {
+        bottom: var(--space-4);
+    }
+    
+    .search-section {
+        margin-top: calc(var(--section-padding) * -0.3);
+    }
+    
+    .search-container {
+        padding: var(--space-5);
+    }
+    
+    .popular-tag {
+        padding: var(--space-1) var(--space-3);
+        font-size: var(--font-size-xs);
+    }
+    
+    .category-card {
+        padding: var(--space-5);
+    }
+    
+    .category-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-4);
+    }
+    
+    .category-title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .category-description {
+        font-size: var(--font-size-sm);
+    }
+    
+    .product-content {
+        padding: var(--space-5);
+    }
+    
+    .product-title {
+        font-size: var(--font-size-base);
+    }
+    
+    .btn-primary-sm {
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--font-size-xs);
+    }
+    
+    .about-experience-badge {
+        padding: var(--space-4);
+        bottom: var(--space-4);
+        right: var(--space-4);
+    }
+    
+    .experience-number {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .experience-text {
+        font-size: var(--font-size-xs);
+    }
+    
+    .about-feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+    }
+    
+    .ceo-card {
+        padding: var(--space-5);
+    }
+    
+    .ceo-image-wrapper {
+        margin-bottom: var(--space-6);
+    }
+    
+    .ceo-quote {
+        font-size: var(--font-size-base);
+    }
+    
+    .ceo-name {
+        font-size: var(--font-size-xl);
+    }
+    
+    .statistics-container {
+        padding: var(--space-6);
+    }
+    
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-3);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .stat-suffix {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .service-card {
+        padding: var(--space-5);
+    }
+    
+    .service-number {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .service-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-2xl);
+    }
+    
+    .showcase-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-name {
+        font-size: var(--font-size-base);
+    }
+    
+    .testimonial-position {
+        font-size: var(--font-size-xs);
+    }
+    
+    .custom-accordion .accordion-button {
+        padding: var(--space-4);
+        font-size: var(--font-size-sm);
+        gap: var(--space-3);
+    }
+    
+    .accordion-number {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .faq-contact-card {
+        padding: var(--space-8);
+    }
+    
+    .faq-contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-3xl);
+    }
+    
+    .newsletter-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-3xl);
+    }
+    
+    .newsletter-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .contact-info-icon {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-xl);
+    }
+    
+    .social-link,
+    .footer-social-link,
+    .contact-social .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-base);
+    }
+    
+    .form-control {
+        padding: var(--space-3);
+        font-size: var(--font-size-sm);
+    }
+    
+    .footer-brand {
+        font-size: var(--font-size-xl);
+    }
+    
+    .footer-widget-title {
+        font-size: var(--font-size-base);
+    }
+    
+    .footer-feature i {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-xl);
+    }
+    
+    .modal-body {
+        padding: var(--space-5);
+    }
+    
+    .product-modal-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .product-modal-actions {
+        flex-direction: column;
+    }
+    
+    .product-modal-actions .btn {
+        width: 100%;
+    }
+    
+    .empty-state {
+        padding: var(--space-12) var(--space-4);
+    }
+    
+    .empty-state-icon {
+        width: 80px;
+        height: 80px;
+        font-size: var(--font-size-4xl);
+    }
+    
+    .error-404-number {
+        font-size: 8rem;
+    }
+    
+    .error-404-title {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+/* ============================================
+   EXTRA SMALL DEVICES (Less than 400px)
+============================================ */
+
+@media (max-width: 399px) {
+    :root {
+        --section-padding: 30px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary-custom,
+    .btn-outline-primary-custom,
+    .btn-outline-light-custom {
+        padding: var(--space-3) var(--space-5);
+        font-size: var(--font-size-sm);
+    }
+    
+    .category-badge {
+        font-size: 0.65rem;
+        padding: var(--space-1) var(--space-2);
+    }
+    
+    .price-value {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION
+============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: calc(var(--navbar-height) + var(--space-8)) 0 var(--space-8);
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+============================================ */
+
+@media print {
+    .navbar,
+    .back-to-top,
+    .search-section,
+    .newsletter-section,
+    .footer-middle,
+    .footer-social,
+    .contact-form-wrapper {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    
+    .section-padding {
+        padding: 20px 0;
+    }
+    
+    .product-card,
+    .service-card,
+    .testimonial-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
