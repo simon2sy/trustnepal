@@ -776,251 +776,388 @@
             </div>
         </div>
     </section>
-    <section class="second-video-section section-padding" id="second-video" 
-             style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); 
-                    position: relative; overflow: hidden;">
-        
-        <!-- Background Decoration -->
-        <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; 
-                    background: rgba(240,165,0,0.05); border-radius: 50%; pointer-events: none;"></div>
-        <div style="position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; 
-                    background: rgba(240,165,0,0.03); border-radius: 50%; pointer-events: none;"></div>
+    ```html
+<section class="second-video-section section-padding" id="second-video"
+         style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+                position: relative; overflow: hidden;">
 
-        <div class="container" style="position: relative; z-index: 2;">
-            <div class="row align-items-center g-5">
+    <!-- Background Decoration -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px;
+                background: rgba(240,165,0,0.05); border-radius: 50%; pointer-events: none;">
+    </div>
 
-                <!-- LEFT SIDE 9:16 VIDEO -->
-                <div class="col-lg-6 text-center order-lg-1 order-2" data-aos="fade-right">
-                    <div class="vertical-video-container">
-                        <div class="vertical-video-wrapper" 
-                             style="border-color: rgba(240,165,0,0.6); 
-                                    box-shadow: 0 30px 80px rgba(0,0,0,0.5), 
-                                                0 0 40px rgba(240,165,0,0.15);">
-                            
-                            <video
-                                id="secondVideo"
-                                class="vertical-video"
-                                autoplay
-                                muted
-                                loop
-                                playsinline
-                                preload="auto"
-                                aria-label="Trust Nepal Suppliers Products and Services Video"
-                            >
-                                <source src="assets/videos/next.MP4" type="video/mp4">
-                                <source src="assets/videos/second.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                            </video>
+    <div style="position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px;
+                background: rgba(240,165,0,0.03); border-radius: 50%; pointer-events: none;">
+    </div>
 
-                            <!-- Sound Toggle for Second Video -->
-                            <button id="toggleSoundBtn2" class="sound-toggle-btn"
-                                    title="Toggle Sound - Trust Nepal Suppliers Products Video">
-                                <div class="btn-icon">
-                                    <i class="fas fa-volume-mute" id="soundIcon2"></i>
-                                </div>
-                                <span class="btn-text2">Tap for Sound</span>
-                            </button>
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center g-5">
 
-                            <!-- Badge for Second Video -->
-                            <div class="live-badge" 
-                                 style="background: rgba(240,165,0,0.85); 
-                                        color: #fff;">
-                                <span class="pulse-dot" 
-                                      style="background-color: #fff;"></span> 
-                                Products Reel
+            <!-- LEFT SIDE 9:16 VIDEO -->
+            <div class="col-lg-6 text-center order-lg-1 order-2"
+                 data-aos="fade-right">
+
+                <div class="vertical-video-container">
+                    <div class="vertical-video-wrapper"
+                         style="border-color: rgba(240,165,0,0.6);
+                                box-shadow: 0 30px 80px rgba(0,0,0,0.5),
+                                            0 0 40px rgba(240,165,0,0.15);">
+
+                        <video
+                            id="secondVideo"
+                            class="vertical-video"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            preload="auto"
+                            aria-label="Trust Nepal Suppliers India Imports Video">
+
+                            <source src="assets/videos/next.MP4" type="video/mp4">
+                            <source src="assets/videos/second.webm" type="video/webm">
+
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Sound Toggle -->
+                        <button id="toggleSoundBtn2"
+                                class="sound-toggle-btn"
+                                title="Toggle Sound - Trust Nepal Suppliers Video">
+
+                            <div class="btn-icon">
+                                <i class="fas fa-volume-mute" id="soundIcon2"></i>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
+                            <span class="btn-text2">Tap for Sound</span>
+                        </button>
 
-                <!-- RIGHT SIDE TEXT -->
-                <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left">
-                    
-                    <!-- Section Label -->
-                    <span class="section-subtitle" 
-                          style="color: #f0a500;">Our Products in Action</span>
-                    
-                    <!-- Heading -->
-                    <h2 class="section-title" 
-                        style="color: #ffffff; font-size: clamp(1.8rem, 4vw, 2.6rem);">
-                        See What We Import from <span style="color: #f0a500;">Nepal</span>
-                    </h2>
-                    
-                    <!-- Description -->
-                    <p style="color: rgba(255,255,255,0.75); font-size: 1.05rem; 
-                               line-height: 1.8; max-width: 500px; margin-bottom: 2rem;">
-                        From the breathtaking Himalayas to global markets — explore our 
-                        premium collection of Nepal products. Authentic Himalayan tea, 
-                        organic herbs, handcrafted textiles, and traditional handicrafts 
-                        — all sourced from <strong style="color: #f0a500;">verified Nepal suppliers</strong> 
-                        and shipped worldwide.
-                    </p>
+                        <!-- Video Badge -->
+                        <div class="live-badge"
+                             style="background: rgba(240,165,0,0.85);
+                                    color: #fff;">
 
-                    <!-- Feature List -->
-                    <div style="display: flex; flex-direction: column; gap: 1rem; 
-                                margin-bottom: 2.5rem;">
-                        
-                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="width: 44px; height: 44px; background: rgba(240,165,0,0.15); 
-                                        border: 1px solid rgba(240,165,0,0.3); border-radius: 10px; 
-                                        display: flex; align-items: center; justify-content: center; 
-                                        flex-shrink: 0;">
-                                <i class="fas fa-leaf" style="color: #f0a500; font-size: 1rem;"></i>
-                            </div>
-                            <div>
-                                <h4 style="color: #fff; font-size: 1rem; font-weight: 600; 
-                                           margin: 0 0 0.3rem;">
-                                    Premium Himalayan Products
-                                </h4>
-                                <p style="color: rgba(255,255,255,0.6); font-size: 0.88rem; 
-                                           margin: 0; line-height: 1.6;">
-                                    Organic teas, herbs, spices and superfoods straight from 
-                                    Nepal's mountain regions
-                                </p>
-                            </div>
-                        </div>
+                            <span class="pulse-dot"
+                                  style="background-color: #fff;"></span>
 
-                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="width: 44px; height: 44px; background: rgba(240,165,0,0.15); 
-                                        border: 1px solid rgba(240,165,0,0.3); border-radius: 10px; 
-                                        display: flex; align-items: center; justify-content: center; 
-                                        flex-shrink: 0;">
-                                <i class="fas fa-hands" style="color: #f0a500; font-size: 1rem;"></i>
-                            </div>
-                            <div>
-                                <h4 style="color: #fff; font-size: 1rem; font-weight: 600; 
-                                           margin: 0 0 0.3rem;">
-                                    Handcrafted Artisan Goods
-                                </h4>
-                                <p style="color: rgba(255,255,255,0.6); font-size: 0.88rem; 
-                                           margin: 0; line-height: 1.6;">
-                                    Traditional handicrafts, Pashmina textiles and woodwork 
-                                    crafted by Nepal's skilled artisans
-                                </p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="width: 44px; height: 44px; background: rgba(240,165,0,0.15); 
-                                        border: 1px solid rgba(240,165,0,0.3); border-radius: 10px; 
-                                        display: flex; align-items: center; justify-content: center; 
-                                        flex-shrink: 0;">
-                                <i class="fas fa-globe" style="color: #f0a500; font-size: 1rem;"></i>
-                            </div>
-                            <div>
-                                <h4 style="color: #fff; font-size: 1rem; font-weight: 600; 
-                                           margin: 0 0 0.3rem;">
-                                    Shipped to 50+ Countries
-                                </h4>
-                                <p style="color: rgba(255,255,255,0.6); font-size: 0.88rem; 
-                                           margin: 0; line-height: 1.6;">
-                                    Reliable worldwide delivery with full customs clearance 
-                                    and end-to-end tracking
-                                </p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                            <div style="width: 44px; height: 44px; background: rgba(240,165,0,0.15); 
-                                        border: 1px solid rgba(240,165,0,0.3); border-radius: 10px; 
-                                        display: flex; align-items: center; justify-content: center; 
-                                        flex-shrink: 0;">
-                                <i class="fas fa-shield-alt" 
-                                   style="color: #f0a500; font-size: 1rem;"></i>
-                            </div>
-                            <div>
-                                <h4 style="color: #fff; font-size: 1rem; font-weight: 600; 
-                                           margin: 0 0 0.3rem;">
-                                    Quality Verified &amp; Certified
-                                </h4>
-                                <p style="color: rgba(255,255,255,0.6); font-size: 0.88rem; 
-                                           margin: 0; line-height: 1.6;">
-                                    All products pass strict pre-shipment inspection and 
-                                    meet international quality standards
-                                </p>
-                            </div>
+                            India Imports
                         </div>
 
                     </div>
-
-                    <!-- CTA Buttons -->
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="#showcase" 
-                           class="btn btn-primary-custom btn-lg"
-                           title="View Nepal Products - Trust Nepal Suppliers">
-                            <span>View All Products</span>
-                            <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="#contact" 
-                           title="Get a Quote from Trust Nepal Suppliers"
-                           style="display: inline-flex; align-items: center; gap: 0.5rem;
-                                  padding: 0.85rem 2rem; border-radius: 50px; font-weight: 600;
-                                  font-size: 1rem; border: 2px solid rgba(255,255,255,0.3);
-                                  color: #fff; text-decoration: none; transition: all 0.3s ease;
-                                  background: transparent;"
-                           onmouseover="this.style.borderColor='#f0a500'; 
-                                        this.style.color='#f0a500';"
-                           onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'; 
-                                       this.style.color='#fff';">
-                            <i class="fas fa-envelope"></i>
-                            <span>Get a Quote</span>
-                        </a>
-                    </div>
-
-                    <!-- Trust Badges -->
-                    <div style="display: flex; gap: 1.5rem; margin-top: 2rem; 
-                                flex-wrap: wrap; padding-top: 2rem; 
-                                border-top: 1px solid rgba(255,255,255,0.1);">
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 800; 
-                                        color: #f0a500; font-family: 'Playfair Display', serif;">
-                                15+
-                            </div>
-                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); 
-                                        text-transform: uppercase; letter-spacing: 0.05em;">
-                                Years Experience
-                            </div>
-                        </div>
-                        <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 800; 
-                                        color: #f0a500; font-family: 'Playfair Display', serif;">
-                                5K+
-                            </div>
-                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); 
-                                        text-transform: uppercase; letter-spacing: 0.05em;">
-                                Happy Clients
-                            </div>
-                        </div>
-                        <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 800; 
-                                        color: #f0a500; font-family: 'Playfair Display', serif;">
-                                50+
-                            </div>
-                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); 
-                                        text-transform: uppercase; letter-spacing: 0.05em;">
-                                Countries Served
-                            </div>
-                        </div>
-                        <div style="width: 1px; background: rgba(255,255,255,0.1);"></div>
-                        <div style="text-align: center;">
-                            <div style="font-size: 1.5rem; font-weight: 800; 
-                                        color: #f0a500; font-family: 'Playfair Display', serif;">
-                                200+
-                            </div>
-                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); 
-                                        text-transform: uppercase; letter-spacing: 0.05em;">
-                                Verified Suppliers
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
+
+            <!-- RIGHT SIDE TEXT -->
+            <div class="col-lg-6 order-lg-2 order-1"
+                 data-aos="fade-left">
+
+                <!-- Section Label -->
+                <span class="section-subtitle"
+                      style="color: #f0a500;">
+                    What We Import
+                </span>
+
+                <!-- Heading -->
+                <h2 class="section-title"
+                    style="color: #ffffff; font-size: clamp(1.8rem, 4vw, 2.6rem);">
+
+                    What We Import From
+                    <span style="color: #f0a500;">India</span>
+
+                </h2>
+
+                <!-- Description -->
+                <p style="color: rgba(255,255,255,0.75);
+                          font-size: 1.05rem;
+                          line-height: 1.8;
+                          max-width: 500px;
+                          margin-bottom: 2rem;">
+
+                    <strong style="color: #f0a500;">
+                        WHAT WE IMPORT FROM INDIA
+                    </strong><br>
+
+                    We import sarees, kurthas, shoes, imitation jewellery,
+                    machinery items, electronic items, and fabrics from India.
+
+                </p>
+
+
+                <!-- IMPORT ITEMS -->
+                <div style="display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            margin-bottom: 2.5rem;">
+
+                    <!-- Saree -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;
+                                      font-size: 1rem;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Saree
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Kurtha -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Kurtha
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Shoes -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Shoes
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Imitation Jewellery -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Imitation Jewellery
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Machinery Items -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Machinery Items
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Electronic Items -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Electronic Items
+                            </h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Fabrics -->
+                    <div style="display: flex;
+                                align-items: center;
+                                gap: 1rem;">
+
+                        <div style="width: 44px;
+                                    height: 44px;
+                                    background: rgba(240,165,0,0.15);
+                                    border: 1px solid rgba(240,165,0,0.3);
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-shrink: 0;">
+
+                            <i class="fas fa-check"
+                               style="color: #f0a500;">
+                            </i>
+                        </div>
+
+                        <div>
+                            <h4 style="color: #fff;
+                                       font-size: 1rem;
+                                       font-weight: 600;
+                                       margin: 0;">
+                                Fabrics
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- CTA Buttons -->
+                <div style="display: flex;
+                            gap: 1rem;
+                            flex-wrap: wrap;">
+
+                    <a href="#showcase"
+                       class="btn btn-primary-custom btn-lg"
+                       title="View Imported Products">
+
+                        <span>View All Products</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+
+                    </a>
+
+                    <a href="#contact"
+                       title="Get a Quote from Trust Nepal Suppliers"
+                       style="display: inline-flex;
+                              align-items: center;
+                              gap: 0.5rem;
+                              padding: 0.85rem 2rem;
+                              border-radius: 50px;
+                              font-weight: 600;
+                              font-size: 1rem;
+                              border: 2px solid rgba(255,255,255,0.3);
+                              color: #fff;
+                              text-decoration: none;
+                              transition: all 0.3s ease;
+                              background: transparent;"
+
+                       onmouseover="this.style.borderColor='#f0a500';
+                                    this.style.color='#f0a500';"
+
+                       onmouseout="this.style.borderColor='rgba(255,255,255,0.3)';
+                                   this.style.color='#fff';">
+
+                        <i class="fas fa-envelope"></i>
+                        <span>Get a Quote</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+```
+
 
 
     <!-- ============================================
